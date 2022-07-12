@@ -47,6 +47,7 @@ class PriceControllerTest {
         ResponseEntity<PriceResponseDto> responseDto = priceController.findByDateAndProductIdAndBrandId(REQUEST_14_06_10_00);
 
         assertEquals(HttpStatus.OK, responseDto.getStatusCode());
+        assertNotNull(responseDto.getBody());
         assertEquals(PRICE_35_50, responseDto.getBody().price());
     }
 
@@ -57,6 +58,7 @@ class PriceControllerTest {
         ResponseEntity<PriceResponseDto> responseDto = priceController.findByDateAndProductIdAndBrandId(REQUEST_14_06_16_00);
 
         assertEquals(HttpStatus.OK, responseDto.getStatusCode());
+        assertNotNull(responseDto.getBody());
         assertEquals(PRICE_25_45, responseDto.getBody().price());
     }
 
@@ -67,6 +69,7 @@ class PriceControllerTest {
         ResponseEntity<PriceResponseDto> responseDto = priceController.findByDateAndProductIdAndBrandId(REQUEST_14_06_21_00);
 
         assertEquals(HttpStatus.OK, responseDto.getStatusCode());
+        assertNotNull(responseDto.getBody());
         assertEquals(PRICE_35_50, responseDto.getBody().price());
     }
 
@@ -77,6 +80,7 @@ class PriceControllerTest {
         ResponseEntity<PriceResponseDto> responseDto = priceController.findByDateAndProductIdAndBrandId(REQUEST_15_06_10_00);
 
         assertEquals(HttpStatus.OK, responseDto.getStatusCode());
+        assertNotNull(responseDto.getBody());
         assertEquals(PRICE_30_50, responseDto.getBody().price());
     }
 
@@ -87,6 +91,7 @@ class PriceControllerTest {
         ResponseEntity<PriceResponseDto> responseDto = priceController.findByDateAndProductIdAndBrandId(REQUEST_16_06_21_00);
 
         assertEquals(HttpStatus.OK, responseDto.getStatusCode());
+        assertNotNull(responseDto.getBody());
         assertEquals(PRICE_38_95, responseDto.getBody().price());
     }
 
